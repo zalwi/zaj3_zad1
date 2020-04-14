@@ -1,19 +1,7 @@
 class TestItems {
     public static void main(String[] args) {
-        Glass szklanka = new Glass();
-        Glass kieliszek = new Glass();
-
-        szklanka.capacity = 100;
-        szklanka.isEmpty = false;
-        szklanka.material = "szkło i metal";
-        szklanka.name = "Szklanka do herbaty z koszyczkiem";
-        szklanka.totalCapacity = 200;
-
-        kieliszek.capacity = 0;
-        kieliszek.isEmpty = true;
-        kieliszek.material = "szkło";
-        kieliszek.name = "Kieliszek do białego wina";
-        kieliszek.totalCapacity = 150;
+        Glass szklanka = new Glass("Szklanka do herbaty z koszyczkiem","szkło i metal",100,200,false);
+        Glass kieliszek = new Glass("Kieliszek do białego wina", "szkło",0,150,true);
 
         System.out.println( "Nazwa:\t\t" + szklanka.name +
                             "\nMateriał:\t" + szklanka.material +
